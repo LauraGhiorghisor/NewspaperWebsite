@@ -6,7 +6,7 @@ body {
 .main_title {
     width: 100%;
 }
-/*Intro instructions */
+/*Introductory paragraph and conclusion are both styled with this */
 .intro p, footer p {
     font-size: 1.25rem;
     text-align: justify;
