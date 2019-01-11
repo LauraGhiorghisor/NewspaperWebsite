@@ -59,11 +59,11 @@ function make_sticky() {
 }
 //When user scrolls back up, nav tag goes back to normal.
 function undo_sticky() {
-	if (window.scrollY < 220)
-		{var c = document.getElementsByTagName("nav");
-	c[0].style.position = "static";
-	c[1].style.position = "static";
-}
+	if (window.scrollY < 220) {
+		var c = document.getElementsByTagName("nav");
+		c[0].style.position = "static";
+		c[1].style.position = "static";
+	}
 
 }
 

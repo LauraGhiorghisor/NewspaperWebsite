@@ -1,101 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- shows up in searches-->
-    <meta name="description" content="A site about web development"> 
+    <meta name="description" content="A site about web development">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes">
     <title>Glossary</title>
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-     <!-- All subsequent pages are linked to a secondary external stylesheet called article.css. 
+    <!-- All subsequent pages are linked to a secondary external stylesheet called article.css. 
         Due to consistent layout settings, most settings in main.css are kept on the article pages.
         Having the article.css linked after the main.css lets the cascading styles be overwritten by the ones in article.css 
         so that they apply strictly to the article page and not the landing page.-->
     <link rel="stylesheet" type="text/css" media="screen" href="article.css" />
 </head>
-<body>
-       <!-- All sections that are identical with the ones in index.html will not be commented again. -->
-        <header role="banner">
-                <div class="date_bar">
-                        <time id="current_date" datetime="07:00"></time>
-                </div>
-                <div class="burger_nav">
-                    <nav role="navigation" class="burger_banner_nav" id="sticky_nav" >
-                        <div id="burger_button_container">
-                            <button class="burger_button"></button>
-                        </div>
-                        <div class="home_link">
-                            <a href="index.html" id="jstitle">It's a web wide world</a>
-                        </div>
-                        <ul class="drop_down" id="burger_drop_down">
-                            
-                                <li><a href="index.html">Home</a></li>
-                            <li><a href="reviews.html">Reviews</a></li>
-                            <li><a href="glossary.html">Glossary</a></li>
-                            <li><a href="jobs.html">Jobs</a></li>
-                            <li><a href="tutorials.html">Tutorials</a></li>
-                                <li><a id="exit_button_burger_menu">[X]</a></li>
-                        </ul>
-                        
-                    </nav>
-                </div>
-               <!-- Source https://unsplash.com/-->
-                <img  src="img/glossary2.png" title="Glossary" alt="A picture of books." >
-                </header>
-        <main role="main">
-               
-            <h1 class="main_title">Glossary</h1>
-            <div  class="two_col_container">
 
-                    <div class="main_container glossary_height">
-                        <article role="article">
-                            <!-- Semantic element dl-->
-                        <dl title="General terms">
-                            <dt class="gold_color dt">HTML</dt>
-                            <dd role="definition"><p>HyperText Markup Language (HTML) is used to describe and define the content of a webpage.</p></dd>
-                            <dt class="gold_color dt">CSS</dt>
-                            <dd role="definition"><p>Cascading Style Sheets (CSS) are used to describe the appearance or presentation of content on a webpage.</p></dd>
-                            <dt class="gold_color dt">Javascript</dt>
-                            <dd role="definition"><p>JavaScript is the programming language that runs in your browser. You can use it to add interactivity and other dynamic features to your website or application.</p></dd>
-                            <dt class="gold_color dt">HTTP</dt>
-                            <dd role="definition"><p>Hypertext Transfer Protocol (HTTP) is used to deliver HTML and other hypermedia documents on the web.</p></dd>
-                        </dl> 
-                        <cite><a href="https://developer.mozilla.org/en-US/docs/Web">&copy;2005-2019 Mozilla and individual contributors</a></cite>
-                        </article>
-                    </div>
-                
-                    <div class="main_container glossary_height">
-                        <article role="article">   
-                                <dl title="CSS terms">
-                                        <dt class="gold_color dt">Property</dt>
-                                        <dd role="definition"><p>The property which is an identifier, that is a human-readable name, that defines which feature is considered.</p></dd>
-                                        <dt class="gold_color dt">Value</dt>
-                                        <dd role="definition"><p>The value which describe how the feature must be handled by the engine. Each property has a set of valid values, defined by a formal grammar, as well as a semantic meaning, implemented by the browser engine.</p></dd>
-                                        <dt class="gold_color dt">Declaration</dt>
-                                        <dd role="definition"><p>A property and value pair is called a declaration, and any CSS engine calculates which declarations apply to every single element of a page in order to appropriately lay it out, and to style it.</p></dd>
-                                        <dt class="gold_color dt">Ruleset</dt>
-                                        <dd role="definition"><p> The pair selector group-declarations block is called a ruleset, or often simply a rule.</p></dd>
-                                    </dl>
-                                    <cite><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Syntax">&copy;2005-2019 Mozilla and individual contributors</a></cite>
-                            </article> 
-                    </div>
-    
+<body>
+    <!-- All sections that are identical with the ones in index.html will not be commented again. -->
+    <header role="banner">
+        <div class="date_bar">
+            <time id="current_date" datetime="07:00"></time>
         </div>
-        </main>
-        <footer role="contentinfo">
-                <small> &copy; Laura Ghiorghisor 2018</small>
-                <div class="social_media_icons">
-                       
-                    <a class="icon float_right" href="https://www.youtube.com/channel/UCT1xz-J5um75fhCgJhLYLIw?view_as=subscriber"><img src="img/youtube.png" alt="Youtube shortcut and icon"></a>
-                    <a class="icon float_right align_icon" href="mailto:laura.ghiorghisor@gmail.com"><img src="img/gmail.png" alt="Gmail link and icon"></a>
-                    <a class="icon float_right" href="https://www.facebook.com/ghiorghisor.laurateodora" ><img src="img/fb.png" alt="Facebook link and icon"></a>
-                   
+        <div class="burger_nav">
+            <nav role="navigation" class="burger_banner_nav" id="sticky_nav">
+                <div id="burger_button_container">
+                    <button class="burger_button"></button>
                 </div>
-        
-        
-            </footer>
-        
-        <script src="main.js"></script>>
+                <div class="home_link">
+                    <a href="index.html" id="jstitle">It's a web wide world</a>
+                </div>
+                <ul class="drop_down" id="burger_drop_down">
+
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="reviews.html">Reviews</a></li>
+                    <li><a href="glossary.html">Glossary</a></li>
+                    <li><a href="jobs.html">Jobs</a></li>
+                    <li><a href="tutorials.html">Tutorials</a></li>
+                    <li><a id="exit_button_burger_menu">[X]</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- Source https://unsplash.com/-->
+        <img src="img/glossary2.png" title="Glossary" alt="A picture of books.">
+    </header>
+    <main role="main">
+        <h1 class="main_title">Glossary</h1>
+        <div class="two_col_container">
+
+            <div class="main_container glossary_height">
+                <article role="article">
+                    <!-- Semantic element dl-->
+                    <dl title="General terms">
+                        <dt class="gold_color dt">HTML</dt>
+                        <dd role="definition">
+                            <p>HyperText Markup Language (HTML) is used to describe and define the content of a
+                                webpage.</p>
+                        </dd>
+                        <dt class="gold_color dt">CSS</dt>
+                        <dd role="definition">
+                            <p>Cascading Style Sheets (CSS) are used to describe the appearance or presentation of
+                                content on a webpage.</p>
+                        </dd>
+                        <dt class="gold_color dt">Javascript</dt>
+                        <dd role="definition">
+                            <p>JavaScript is the programming language that runs in your browser. You can use it to add
+                                interactivity and other dynamic features to your website or application.</p>
+                        </dd>
+                        <dt class="gold_color dt">HTTP</dt>
+                        <dd role="definition">
+                            <p>Hypertext Transfer Protocol (HTTP) is used to deliver HTML and other hypermedia
+                                documents on the web.</p>
+                        </dd>
+                    </dl>
+                    <cite><a href="https://developer.mozilla.org/en-US/docs/Web">&copy;2005-2019 Mozilla and individual
+                            contributors</a></cite>
+                </article>
+            </div>
+            <div class="main_container glossary_height">
+                <article role="article">
+                    <dl title="CSS terms">
+                        <dt class="gold_color dt">Property</dt>
+                        <dd role="definition">
+                            <p>The property which is an identifier, that is a human-readable name, that defines which
+                                feature is considered.</p>
+                        </dd>
+                        <dt class="gold_color dt">Value</dt>
+                        <dd role="definition">
+                            <p>The value which describe how the feature must be handled by the engine. Each property
+                                has a set of valid values, defined by a formal grammar, as well as a semantic meaning,
+                                implemented by the browser engine.</p>
+                        </dd>
+                        <dt class="gold_color dt">Declaration</dt>
+                        <dd role="definition">
+                            <p>A property and value pair is called a declaration, and any CSS engine calculates which
+                                declarations apply to every single element of a page in order to appropriately lay it
+                                out, and to style it.</p>
+                        </dd>
+                        <dt class="gold_color dt">Ruleset</dt>
+                        <dd role="definition">
+                            <p> The pair selector group-declarations block is called a ruleset, or often simply a rule.</p>
+                        </dd>
+                    </dl>
+                    <cite><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Syntax">&copy;2005-2019 Mozilla and
+                            individual contributors</a></cite>
+                </article>
+            </div>
+        </div>
+    </main>
+    <footer role="contentinfo">
+        <small> &copy; Laura Ghiorghisor 2018</small>
+        <div class="social_media_icons">
+
+            <a class="icon float_right" href="https://www.youtube.com/channel/UCT1xz-J5um75fhCgJhLYLIw?view_as=subscriber"><img
+                    src="img/youtube.png" alt="Youtube shortcut and icon"></a>
+            <a class="icon float_right align_icon" href="mailto:laura.ghiorghisor@gmail.com"><img src="img/gmail.png"
+                    alt="Gmail link and icon"></a>
+            <a class="icon float_right" href="https://www.facebook.com/ghiorghisor.laurateodora"><img src="img/fb.png"
+                    alt="Facebook link and icon"></a>
+        </div>
+    </footer>
+    <script src="main.js"></script>>
 </body>
+
 </html>

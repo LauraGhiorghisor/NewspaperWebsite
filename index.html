@@ -1,141 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- Shows up in searches-->
-    <meta name="description" content="A site about web development"> 
+    <meta name="description" content="A site about web development">
     <!-- Sets up the viewport-->
     <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1, user-scalable=yes" />
     <title>It's a web wide world</title>
     <!--Links to the external stylesheet. This applies to all subsequent pages as well.-->
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <!-- A favicon that appears in the open tab, a bookmark etc.-->
-    <link rel="shortcut icon"  type="image/png" href="img/favicon.png">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
 </head>
 
 <body>
-        
     <header role="banner">
         <!-- Semantic use of section-->
-            <div class="date_bar">
-                    <time id="current_date" datetime="07:00"></time>
-            </div>
+        <div class="date_bar">
+            <time id="current_date" datetime="07:00"></time>
+        </div>
         <a href="index.html"><img src="img/banner.png" alt="banner"></a>
         <h1>It's a web wide world</h1>
         <!-- The two navigations in place. We start off with the burger navigation, while the main one is hidden (mobile first approach). See the css.-->
         <div class="burger_nav">
-            <nav  role="navigation" class="burger_banner_nav" id="sticky_nav" >
+            <nav role="navigation" class="burger_banner_nav" id="sticky_nav">
                 <div id="burger_button_container">
                     <button class="burger_button"></button>
                 </div>
                 <div class="home_link">
                     <a href="index.html" id="jstitle">on the web</a>
                 </div>
-               <!-- Semantically, a drop down is just a set of unordered elements. They will be made to display flex in the adjacent CSS.-->
+                <!-- Semantically, a drop down is just a set of unordered elements. They will be made to display flex in the adjacent CSS.-->
                 <ul class="drop_down" id="burger_drop_down">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="reviews.html">Reviews</a></li>
-                            <li><a href="glossary.html">Glossary</a></li>
-                            <li><a href="jobs.html">Jobs</a></li>
-                            <li><a href="tutorials.html">Tutorials</a></li>
-                        <li><a id="exit_button_burger_menu">[X]</a></li>
-                </ul>
-            </nav>
-        </div>
-        
-        <nav role="navigation" class="main_nav">
-            <!-- Unordered list, best suited semantically for grouping together this collection of links.
-            All navigation has the WAI ARIA role of "navigation".-->
-            <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="reviews.html">Reviews</a></li>
                     <li><a href="glossary.html">Glossary</a></li>
                     <li><a href="jobs.html">Jobs</a></li>
                     <li><a href="tutorials.html">Tutorials</a></li>
+                    <li><a id="exit_button_burger_menu">[X]</a></li>
+                </ul>
+            </nav>
+        </div>
+        <nav role="navigation" class="main_nav">
+            <!-- Unordered list, best suited semantically for grouping together this collection of links.
+            All navigation has the WAI ARIA role of "navigation".-->
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="glossary.html">Glossary</a></li>
+                <li><a href="jobs.html">Jobs</a></li>
+                <li><a href="tutorials.html">Tutorials</a></li>
             </ul>
         </nav>
-       
     </header>
     <!-- Both header and main are semantic. Main is accompanied by the WAI ARIA role "main".-->
-<main role="main">
-   
-<!-- This contains the first two articles of the landing page.-->
-    <div  class="two_col_container">
-
-                <div class="main_container landing_page_min_height">
-                    <h2 class="main_title"><a class="no_style_link" href="reviews.html">Reviews</a></h2>
-                    <!-- Semantic element article and ARIA role-->
-                    <article role="article">
-                    <a href="reviews.html"><img class="article_pic" src="img/redkeyboard_small.png" title="Reviews" alt="A picture of a keyboard." ></a>
+    <main role="main">
+        <!-- This contains the first two articles of the landing page.-->
+        <div class="two_col_container">
+            <div class="main_container landing_page_min_height">
+                <h2 class="main_title"><a class="no_style_link" href="reviews.html">Reviews</a></h2>
+                <!-- Semantic element article and ARIA role-->
+                <article role="article">
+                    <a href="reviews.html"><img class="article_pic" src="img/redkeyboard_small.png" title="Reviews" alt="A picture of a keyboard."></a>
                     <h3><a class="no_style_link" href="reviews.html">Web resources</a></h3>
-                     <p>Lynda.com or MDN resources? Get the help you need. Find out what they're all about!</p>
-                    </article>
-                </div>
-            
-                <div class="main_container landing_page_min_height">
-                    <h2 class="main_title"><a class="no_style_link" href="glossary.html">Glossary</a></h2>
-                    <article role="article">
-                    <a href="glossary.html"><img class="article_pic" src="img/glossary2_small.png" title="Glossary" alt="A picture of books." ></a>
+                    <p>Lynda.com or MDN resources? Get the help you need. Find out what they're all about!</p>
+                </article>
+            </div>
+            <div class="main_container landing_page_min_height">
+                <h2 class="main_title"><a class="no_style_link" href="glossary.html">Glossary</a></h2>
+                <article role="article">
+                    <a href="glossary.html"><img class="article_pic" src="img/glossary2_small.png" title="Glossary" alt="A picture of books."></a>
                     <h3><a class="no_style_link" href="glossary.html">What do they mean?</a></h3>
-                     <p>Ever wondered what HTML, CSS and JS stand for? Click here to read more!</p>
-                    </article>
-                </div>
-
-    </div>
-    
-<!-- This contains the next two articles of the landing page.-->
-<div  class="two_col_container">
-                    <div class="main_container landing_page_min_height">
-                            <h2 class="main_title"> <a class="no_style_link" href="jobs.html">Jobs</a></h2>
-                            <article role="article">   
-                                <a href="jobs.html"><img class="article_pic" src="img/jobs_small.png" title="Jobs" alt="A picture of an office with an inscription on the wall saying Punch the day in the face."></a>
-                                <h3><a class="no_style_link" href="jobs.html">What to choose?</a></h3>
-                                <p>What developers make, and what they need to know in order to make it happen.</p>
-                                </article>
-                                </div>
-
-                                <div class="main_container landing_page_min_height">
-                                        <h2 class="main_title"><a class="no_style_link" href="tutorials.html">Tutorials</a></h2>
-                                        <article role="article">   
-                                            <a href="tutorials.html"><img class="article_pic" src="img/tutorials_small.png" title="Tutorials" alt="A picture of coloring crayons."></a>
-                                            <h3> <a class="no_style_link" href="tutorials.html">Tricks of the trade</a></h3>
-                                            <p>Ever wondered how to make that sticky bar stick? Find out how by clicking here!
-                                            </p>
-                                            </article>
-                                            </div>  
-</div> 
-</main>
-<!-- This contains the last section of the landing page, which can be interpreted as a stand alone article, but also gets the aside semantic tag and ARIA role of "complementary".-->
-<aside role="complementary" class="one_col-container aside_min_height">
+                    <p>Ever wondered what HTML, CSS and JS stand for? Click here to read more!</p>
+                </article>
+            </div>
+        </div>
+        <!-- This contains the next two articles of the landing page.-->
+        <div class="two_col_container">
+            <div class="main_container landing_page_min_height">
+                <h2 class="main_title"> <a class="no_style_link" href="jobs.html">Jobs</a></h2>
+                <article role="article">
+                    <a href="jobs.html"><img class="article_pic" src="img/jobs_small.png" title="Jobs" alt="A picture of an office with an inscription on the wall saying Punch the day in the face."></a>
+                    <h3><a class="no_style_link" href="jobs.html">What to choose?</a></h3>
+                    <p>What developers make, and what they need to know in order to make it happen.</p>
+                </article>
+            </div>
+            <div class="main_container landing_page_min_height">
+                <h2 class="main_title"><a class="no_style_link" href="tutorials.html">Tutorials</a></h2>
+                <article role="article">
+                    <a href="tutorials.html"><img class="article_pic" src="img/tutorials_small.png" title="Tutorials"
+                            alt="A picture of coloring crayons."></a>
+                    <h3> <a class="no_style_link" href="tutorials.html">Tricks of the trade</a></h3>
+                    <p>Ever wondered how to make that sticky bar stick? Find out how by clicking here!
+                    </p>
+                </article>
+            </div>
+        </div>
+    </main>
+    <!-- This contains the last section of the landing page, which can be interpreted as a stand alone article, but also gets the aside semantic tag and ARIA role of "complementary".-->
+    <aside role="complementary" class="one_col-container aside_min_height">
         <div class="main_container">
-        <h2 class="main_title gold">About me</h2>
-            <article role="article">   
-            <img class="about_pic" src="img/laura1.png" title="Laura" alt="A picture of Laura, the author of the website." >
-            <h3 class="gold">Who am I?</h3>
-            <p>I am Laura. I love German philosophy, French movies, Spanish food, Italian architecture, Baroque music, Japanese prints and most of all, the English countryside. I take pleasure in travelling, reading, coding and having meaningful conversations about life (subject to availability).</p>
-            <p>I am currently enrolled at the University of Northampton, reading Business Computing - Web Design. My hope is to develop an understanding of the industry and deliver business solutions to push the world forward. I aim to build efficient, user-frienldy, accessible code. This website offers a short introduction into the world of web development. </p>
-            <p>Feel free to cruise through the website to find out more about jobs and salaries, web resources such as Lynda.com and MDN, web terminology and interesting tutorials. Find more about me by accessing the links below or contact me via e-mail or FaceBook. </p>
-        </article>
-         </div> 
-</aside>
-
-<!-- Semantic use of footer and small tags. Footer gets the ARIA role of contentinfo. This section contains social media link and a copyright statement.
+            <h2 class="main_title gold">About me</h2>
+            <article role="article">
+                <img class="about_pic" src="img/laura1.png" title="Laura" alt="A picture of Laura, the author of the website.">
+                <h3 class="gold">Who am I?</h3>
+                <p>I am Laura. I love German philosophy, French movies, Spanish food, Italian architecture, Baroque
+                    music, Japanese prints and most of all, the English countryside. I take pleasure in travelling,
+                    reading, coding and having meaningful conversations about life (subject to availability).</p>
+                <p>I am currently enrolled at the University of Northampton, reading Business Computing - Web Design.
+                    My hope is to develop an understanding of the industry and deliver business solutions to push the
+                    world forward. I aim to build efficient, user-frienldy, accessible code. This website offers a
+                    short introduction into the world of web development. </p>
+                <p>Feel free to cruise through the website to find out more about jobs and salaries, web resources such
+                    as Lynda.com and MDN, web terminology and interesting tutorials. Find more about me by accessing
+                    the links below or contact me via e-mail or FaceBook. </p>
+            </article>
+        </div>
+    </aside>
+    <!-- Semantic use of footer and small tags. Footer gets the ARIA role of contentinfo. This section contains social media link and a copyright statement.
 All img tags contain the alt attribute for enhances accessibility.-->
     <footer role="contentinfo">
         <small> &copy; Laura Ghiorghisor 2018</small>
         <div class="social_media_icons">
-               
-            <a class="icon float_right" href="https://www.youtube.com/channel/UCT1xz-J5um75fhCgJhLYLIw?view_as=subscriber"><img src="img/youtube.png" alt="Youtube shortcut and icon"></a>
-            <a class="icon float_right align_icon" href="mailto:laura.ghiorghisor@gmail.com"><img src="img/gmail.png" alt="Gmail link and icon"></a>
-            <a class="icon float_right" href="https://www.facebook.com/ghiorghisor.laurateodora" ><img src="img/fb.png" alt="Facebook link and icon"></a>
-           
+
+            <a class="icon float_right" href="https://www.youtube.com/channel/UCT1xz-J5um75fhCgJhLYLIw?view_as=subscriber"><img
+                    src="img/youtube.png" alt="Youtube shortcut and icon"></a>
+            <a class="icon float_right align_icon" href="mailto:laura.ghiorghisor@gmail.com"><img src="img/gmail.png"
+                    alt="Gmail link and icon"></a>
+            <a class="icon float_right" href="https://www.facebook.com/ghiorghisor.laurateodora"><img src="img/fb.png"
+                    alt="Facebook link and icon"></a>
         </div>
-
-
     </footer>
     <!-- External link to the javascript file.-->
     <script src="main.js" type="text/javascript"></script>>
-    
 </body>
+
 </html>

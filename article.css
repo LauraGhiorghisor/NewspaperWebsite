@@ -6,83 +6,97 @@ body {
 .main_title {
     width: 100%;
 }
+
 /*Introductory paragraph and conclusion are both styled with this */
-.intro p, footer p {
+.intro p,
+footer p {
     font-size: 1.25rem;
     text-align: justify;
     box-sizing: border-box;
     margin: 5px;
     padding: 5px 60px;
 }
-.intro p:first-child, footer p:first-child {
+
+.intro p:first-child,
+footer p:first-child {
     margin-top: 40px;
 }
-.intro p:last-child, footer p:last-child{
+
+.intro p:last-child,
+footer p:last-child {
     margin-bottom: 10px;
 }
+
 /*General article related settings*/
 
 article {
     max-width: 100%;
     border: none;
     padding-top: 5px;
-    
+
 }
+
 article p {
-font-size: 1.10rem;
+    font-size: 1.10rem;
 }
 
 article p::first-letter {
     font-family: Georgia;
-      font-size: 1.25rem;
-      line-height: 1rem;
-      padding-top: 0px;
-      padding-right: 0px;
-      padding-left: 0px; 
-        
-    }
-    iframe {
-        max-width: 100%;
-        border: 0;
-    }
+    font-size: 1.25rem;
+    line-height: 1rem;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+
+}
+
+iframe {
+    max-width: 100%;
+    border: 0;
+}
+
 cite a {
-    
+
     margin-bottom: 20px;
     margin-top: 0px;
     padding: 0px;
     float: right;
-        font-style: normal;
-        font-size: 1rem;
-        
+    font-style: normal;
+    font-size: 1rem;
+
 }
 
 h2 {
-        margin-top: 25px;
-        color: goldenrod;
-        margin-left: 0px;
+    margin-top: 25px;
+    color: goldenrod;
+    margin-left: 0px;
 }
+
 h3 {
-        font-weight: bold;
-        margin-bottom: 10px;
-        margin-left: 0px;
-        margin-top: 20px;
-        padding-left: 5px;
-    }
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    margin-top: 20px;
+    padding-left: 5px;
+}
+
 /*Date is not shown*/
 .date_bar {
     display: none;
-   
+
 }
 
 /*Burger nav settings*/
-.burger_nav { 
+.burger_nav {
     display: block;
-    
+
 }
+
 .burger_banner_nav {
     border-top: none;
 }
-.drop_down{
+
+.drop_down {
     margin-left: -8px;
 }
 
@@ -91,19 +105,22 @@ header img {
     max-width: 100%;
     margin: auto;
 }
+
 /*Reviews*/
 .lynda_reference {
     font-size: 1rem;
     margin-top: 5px;
     margin-bottom: 15px;
 }
+
 li img {
     margin: 30px auto 0px;
     padding: 30px 0 0;
     max-width: 100%;
-    
+
 }
-.review_height article{
+
+.review_height article {
     min-height: 1950px;
 }
 
@@ -113,23 +130,26 @@ li img {
     list-style-type: disc;
     list-style-position: outside;
 }
+
 .tutorials_ul li {
     margin-top: 10px;
     margin-bottom: 20px;
     clear: both;
 }
- .tutorials_ul ul li p {
-   
+
+.tutorials_ul ul li p {
+
     font-size: 1.25rem;
     line-height: 1.75rem;
-    
+
 }
 
 
 .first_child_margin {
     margin-top: 10px;
 }
-.tutorial_height article{
+
+.tutorial_height article {
     min-height: 1490px;
 }
 
@@ -137,15 +157,18 @@ li img {
 .job_tasks li p {
     text-indent: 0;
 }
-blockquote p{
+
+blockquote p {
     text-indent: 0px;
     padding: 5px;
     letter-spacing: 1px;
     line-height: 1.5rem;
 }
+
 .custom_top_margin {
     margin-top: 20px;
 }
+
 .gold_color {
     color: goldenrod;
     margin: 40px 30px 0px 10px;
@@ -153,23 +176,24 @@ blockquote p{
     font-size: 1.5rem;
 
 }
-.jobs_min_height article 
-{
+
+.jobs_min_height article {
     min-height: 1150px;
 }
+
 /*Glossary*/
-.glossary_height article{
+.glossary_height article {
     min-height: 530px;
 }
 
 .dt {
-  margin: 0 0 5px -20px;
-  padding: 0 0 5px 0px;
+    margin: 0 0 5px -20px;
+    padding: 0 0 5px 0px;
 
 }
+
 /*Footer settings*/
 
 footer small p {
     text-align: right;
 }
-
