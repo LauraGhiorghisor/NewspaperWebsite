@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- shows up in searches-->
+    <meta name="description" content="A site about web development"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes">
+    <title>Tutorials</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+     <!-- All subsequent pages are linked to a secondary external stylesheet called article.css. 
+        Due to consistent layout settings, most settings in main.css are kept on the article pages.
+        Having the article.css linked after the main.css lets the cascading styles be overwritten by the ones in article.css 
+        so that they apply strictly to the article page and not the landing page.-->
+    <link rel="stylesheet" type="text/css" media="screen" href="article.css" />
+</head>
+<body>
+       <!-- All sections that are identical with the ones in index.html will not be commented again. -->
+        <header role="banner">
+                <div class="date_bar">
+                        <time id="current_date" datetime="07:00"></time>
+                </div>
+                <div class="burger_nav">
+                   
+                
+                            
+                    <nav role="navigation" class="burger_banner_nav" id="sticky_nav" >
+                        <div id="burger_button_container">
+                            <button class="burger_button"></button>
+                        </div>
+                        <div class="home_link">
+                            <a href="index.html" id="jstitle">It's a web wide world</a>
+                        </div>
+                        <ul class="drop_down" id="burger_drop_down">
+                            
+                                <li><a href="index.html">Home</a></li>
+                            <li><a href="reviews.html">Reviews</a></li>
+                            <li><a href="glossary.html">Glossary</a></li>
+                            <li><a href="jobs.html">Jobs</a></li>
+                            <li><a href="tutorials.html">Tutorials</a></li>
+                                <li><a id="exit_button_burger_menu">[X]</a></li>
+                        </ul>
+                        
+                    </nav>
+                </div>
+               <!-- Source https://unsplash.com/-->
+                <img  src="img/tutorials.png" title="Tutorials" alt="A picture of coloring crayons." >
+                </header>
+        <main role="main">
+               
+            <h1 class="main_title"> Tutorials</h1>
+            <div  class="two_col_container">
+
+                    <div class="main_container tutorial_height">
+                        <article role="article">
+                        <h2>How to make a sticky bar</h2>
+                          <ul class="tutorials_ul">
+                              <li><p>Use JavaScript</li>
+                              <li><p>Test the scrolling point, using an if condition that checks if the page has been scrolled past a certain number of pixels.</li>
+                              <li><p>Example: if (window.scrollY > 200). </li>
+                              <li> <p>If the condition is met, then change the nav bar's position to fixed, with coordinates (0,0). </li>
+                              <li> <p>Reversely, when the user scrolls up, the navbar should be positioned static.</li>
+                            </ul>
+                            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/LOWjWRy_Kks?cc_load_policy=1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <cite><a href="https://www.youtube.com/embed/ujYiX0WniCo">&copy; YouTube</a></cite>
+                            <h2>How to customize your browser scrollbar</h2>
+                            <ul class="tutorials_ul">
+                                    <li><p>You have tu use CSS with a vendor prefix.</li>
+                                    <li><p>One can chnage the scrollbar, the track, the thumb and the button. </li>
+                                    <li><p>Changing attributes such as color and width can give the page a very interesting look.</li>
+                                    <li><p>Extra effect can be achieved by adding a border radius or even box-shadow.</li>
+                                     <li><p>Test and play!</p></li>   
+                                    </ul>
+                                     <iframe width="560" height="315" src="https://www.youtube.com/embed/3-Fb05ixrIw" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                   
+                                     <cite><a href="https://www.youtube.com/embed/ujYiX0WniCo">&copy; YouTube</a></cite>
+                                    
+                        
+                        </article>
+                    </div>
+                
+                    <div class="main_container tutorial_height">
+                        <article role="article">   
+                            <h2>How to make a burger navigation</h2>
+                            <ul class="tutorials_ul">
+                                    <li><p>Create main navigation.</li>
+                                    <li><p>Create secondary navigation, including a burger button and drop-down menu.</li>
+                                    <li><p>Hide main navigation, for smaller screens.</li>
+                                    <li><p>Show burger navigation instead.</li>
+                                    <li><p>To create a toggle  button, watch the video below.</li>
+                                    <li><p>The button will toggle between a burger button and an exit button.</li>
+    
+                                </ul>
+                                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/WlhbGcj_MDg" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <cite><a href="https://www.youtube.com/embed/ujYiX0WniCo">&copy; YouTube</a></cite>
+                                <h2>How to add a responsive set of images</h2>
+                            <ul class="tutorials_ul">
+                                    <li><p>Select a base image - the smallest size.</li>
+                                    <li><p>Add srcset attribute to the image.</li>
+                                    <li><p>The value of the srcset attribute is a list of image sources, separated by commas. Add image size to the source.</li>
+                                    <li><p>Tell the broswer how big to display the images by adding the "sizes" attribute.</li>
+                                     <li><p>Test!</p></li>   
+
+                                </ul>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/ujYiX0WniCo" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <cite><a href="https://www.youtube.com/embed/ujYiX0WniCo">&copy; YouTube</a></cite>
+                            </article> 
+                            
+                    </div>
+    
+        </div>
+        </main>
+        <footer role="contentinfo">
+                <small> &copy; Laura Ghiorghisor 2018</small>
+                <div class="social_media_icons">
+                       
+                    <a class="icon float_right" href="https://www.youtube.com/channel/UCT1xz-J5um75fhCgJhLYLIw?view_as=subscriber"><img src="img/youtube.png" alt="Youtube shortcut and icon"></a>
+                    <a class="icon float_right align_icon" href="mailto:laura.ghiorghisor@gmail.com"><img src="img/gmail.png" alt="Gmail link and icon"></a>
+                    <a class="icon float_right" href="https://www.facebook.com/ghiorghisor.laurateodora" ><img src="img/fb.png" alt="Facebook link and icon"></a>
+                   
+                </div>
+        
+        
+            </footer>
+        <script src="main.js"></script>>
+</body>
+</html>

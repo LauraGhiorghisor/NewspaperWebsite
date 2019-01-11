@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A site about web development"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes">
+    <title>Reviews</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+     <!-- All subsequent pages are linked to a secondary external stylesheet called article.css. 
+        Due to consistent layout settings, most settings in main.css are kept on the article pages.
+        Having the article.css linked after the main.css lets the cascading styles be overwritten by the ones in article.css 
+        so that they apply strictly to the article page and not the landing page.-->
+    <link rel="stylesheet" type="text/css" media="screen" href="article.css" />
+</head>
+<body>
+       <!-- All sections that are identical with the ones in index.html will not be commented again. -->
+        <header role="banner">
+                <div class="date_bar">
+                        <time id="current_date" datetime="07:00"></time>
+                </div>
+                <div class="burger_nav">
+                    <nav  role="navigation" class="burger_banner_nav" id="sticky_nav" >
+                        <div id="burger_button_container">
+                            <button class="burger_button"></button>
+                        </div>
+                        <div class="home_link">
+                            <a href="index.html" id="jstitle">It's a web wide world</a>
+                        </div>
+                        <ul class="drop_down" id="burger_drop_down">
+                            
+                                <li><a href="index.html">Home</a></li>
+                            <li><a href="reviews.html">Reviews</a></li>
+                            <li><a href="glossary.html">Glossary</a></li>
+                            <li><a href="jobs.html">Jobs</a></li>
+                            <li><a href="tutorials.html">Tutorials</a></li>
+                                <li><a id="exit_button_burger_menu">[X]</a></li>
+                        </ul>
+                        
+                    </nav>
+                </div>
+               <!-- Source https://unsplash.com/-->
+                <img  src="img/redkeyboard.png" title="Reviews" alt="A picture of a keyboard." >
+                </header>
+        <main role="main">
+               
+            <h1 class="main_title"> Reviews</h1>
+            <div class="intro">
+                <p>Lynda.com is an extended collection on videos covering an extraordianary variety of topics and tutorials.</p>
+                <p>Mozilla Developer Network is aimed more specifically at web developers and offers a variety of wasy to improve their skills.</p>
+            <p> Both have practical implementations. On Lynda, most videos have an assessment at the end of every chapter, while MDN offers practical examples to be tried out alongside the theoretical part of a tutorial.</p>
+            
+        </div>
+            <div  class="two_col_container">
+
+                    <div class="main_container review_height">
+                        <article role="article">
+                        <h2>Lynda.com</h2>
+                        <p class="first_child_margin">The following are a selection of tutorials from Lynda.com, from HTML basics to the more advanced CSS grids and HTML canvas.</p>
+                        <h3>HTML Essential Training</h3>
+                        <iframe width='560' height='315' src='https://www.lynda.com/player/embed/196195?fs=3&w=560&h=315&ps=paused&utm_medium=referral&utm_source=embed+video&utm_campaign=ldc-website&utm_content=vid-196195' allowfullscreen></iframe><div class="lynda_reference"><a href="https://www.lynda.com/HTML-tutorials/HTML-Essential-Training/170427-2.html" title="Learn how to write HTML, the programming language that powers the web.">HTML Essential Training</a> by <a href="https://www.lynda.com/author/128">James Williamson</a></div>
+                        <h3>CSS: Frameworks and Grids</h3>
+                        <iframe width='560' height='315' src='https://www.lynda.com/player/embed/531273?fs=3&w=560&h=315&ps=paused&utm_medium=referral&utm_source=embed+video&utm_campaign=ldc-website&utm_content=vid-531273' allowfullscreen></iframe><div class="lynda_reference"><a href="https://www.lynda.com/CSS-tutorials/CSS-Frameworks-Grids-2016-Q3-REVISION/504266-2.html" title="Learn how to use a CSS framework like Bootstrap or Foundation to speed up site development and create better, more consistent code. Plus, get a look at CSS grids.">CSS: Frameworks & Grids</a> by <a href="https://www.lynda.com/author/965233">Carrie Dils</a></div>    
+                        <h3> Learning HTML canvas</h3>
+                        <iframe width='560' height='315' src='https://www.lynda.com/player/embed/5005096?fs=3&w=560&h=315&ps=paused&utm_medium=referral&utm_source=embed+video&utm_campaign=ldc-website&utm_content=vid-5005096' allowfullscreen></iframe><div class="lynda_reference"><a href="https://www.lynda.com/JavaScript-tutorials/Learning-HTML-Canvas/765406-2.html" title="Want to create rich and immersive web experiences with HTML and JavaScript?  Learn how to use the Canvas element to build 2D graphics and animations right on screen.">Learning HTML Canvas</a> by <a href="https://www.lynda.com/author/85">Joe Marini</a></div>
+                        <h3>HTML5: Structure, Syntax, and Semantics</h3>
+                        <iframe width='560' height='315' src='https://www.lynda.com/player/embed/370840?fs=3&w=560&h=315&ps=paused&utm_medium=referral&utm_source=embed+video&utm_campaign=ldc-website&utm_content=vid-370840' allowfullscreen></iframe><div class="lynda_reference"><a href="https://www.lynda.com/HTML-tutorials/HTML5-Structure-Syntax-Semantics/182177-2.html" title="Gain a deeper understanding of HTML5, and learn how to create richer, more meaningful webpages with HTML5 structural tags and enhanced semantic markup.">HTML5: Structure, Syntax, and Semantics</a> by <a href="https://www.lynda.com/author/128">James Williamson</a></div>   
+                            <cite><a href="https://www.lynda.com/">&copy; 2019 LinkedIn Corporation</a></cite>
+                        </article>
+                    </div>
+
+                    <div class="main_container review_height">
+                        <article role="article">   
+                            <h2> MDN Web Tools </h2>
+                            <ul class="tutorials_ul">
+                            <li> 
+                                <p>In a manner similar to Lynda's, Mozilla has tutorials for any topic. They are structured thematically and can be undertaken as a training, or just as a quick reference guide.
+                                    <img src="img/mozilla_topics.png" alt="mozilla print screen">
+                                    <cite> <a href="https://developer.mozilla.org/en-US/docs/Web"> &copy; 2005-2019 Mozilla and individual contributors</a></cite>
+                                </li>
+                                <li>  
+                                <p> It inclues a complete reference to all HTML tags, CSS attributes in the form of tables. Additionally, one can find extensive material on HTTP, JavaScript, Web APIs and Graphics.</p>
+                                    <img src="img/mozilla_elements_table.png" alt="mozilla print screen of a table">
+                                    <cite><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">&copy; 2005-2019 Mozilla and individual contributors</a></cite>
+
+                            </li> 
+                            <li> 
+                                    <p>All entries are accompanied by multiple examples, notes, and specifications.
+                                        <img src="img/mozilla_example.png" alt="Working examples on Mozilla">
+                                        <cite><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta">&copy; 2005-2019 Mozilla and individual contributors</a></cite>
+                            </li>
+                                <li>
+                                        <p> A comprehensive table for browser support is provided for each item.</p> 
+                                        <img src="img/mozilla_broswer_support.png" alt="Browser support print screen on Mozilla">
+                                        <cite><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid">&copy; 2005-2019 Mozilla and individual contributors</a></cite>
+                                </li>
+                               
+                           
+
+                                </ul>
+                            </article> 
+                    </div>
+    
+        </div>
+        </main>
+        <footer role="contentinfo">
+                <small> &copy; Laura Ghiorghisor 2018</small>
+                <div class="social_media_icons">
+                       
+                    <a class="icon float_right" href="https://www.youtube.com/channel/UCT1xz-J5um75fhCgJhLYLIw?view_as=subscriber"><img src="img/youtube.png" alt="Youtube shortcut and icon"></a>
+                    <a class="icon float_right align_icon" href="mailto:laura.ghiorghisor@gmail.com"><img src="img/gmail.png" alt="Gmail link and icon"></a>
+                    <a class="icon float_right" href="https://www.facebook.com/ghiorghisor.laurateodora" ><img src="img/fb.png" alt="Facebook link and icon"></a>
+                   
+                </div>
+        
+        
+            </footer>
+        
+        <script src="main.js"></script>>
+</body>
+</html>

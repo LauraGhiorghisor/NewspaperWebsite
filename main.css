@@ -1,0 +1,652 @@
+
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text');
+@import url('https://fonts.googleapis.com/css?family=Lora|Roboto');
+
+/* could also be set for html*/
+:root {
+    font-size: 16px;
+    background-color: white;
+
+    font-stretch: semi-expanded;
+    /*font-size-adjust!*/
+
+}
+/*For general use*/
+.clear {
+    clear: both;
+}
+.align_centre {
+    text-align: center;
+}
+cite a:link, cite a:visited {
+    color: black;
+}
+/*General use float categories.*/
+.float_right {
+    float: right;
+}
+.float_left {
+    float: left;
+}
+/*Anchors will keep their initial color after clicked. The normal formatting of the browsers is also overwritten.*/
+.no_style_link {
+    color: goldenrod;
+    text-decoration: none;
+    background-color: transparent;
+}
+/*Adjust scrollabr colour and width.*/
+::-webkit-scrollbar {  
+    width: 15px;  
+    }  
+    
+    ::-webkit-scrollbar-track {
+    background-color: black;  
+    }
+    
+    ::-webkit-scrollbar-thumb {  
+    background-color: whitesmoke;  
+    height: 10px;
+    }
+    ::-webkit-scrollbar-button {
+                background-color: whitesmoke;
+    }
+  
+/*Normalizes the body settings.*/    
+body {
+    margin: 0;
+    border: 0px;
+    padding: 0px;
+    width: 100%;
+    padding-bottom: 20px;
+    background-color: white;
+    font: normal 1rem "Crimson Text", serif;
+    text-align: justify;
+    word-spacing: 2px;
+    hyphens: auto;
+}
+/*Normalizes settings for all children of the body element*/
+body * {
+    margin: 0;
+    border: 0px;
+    padding: 0px;
+    color: black;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+    font-kerning: normal;
+}
+/* General header settings and max-size: 100% for responsiveness*/
+header{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    background-color: white;
+    max-width: 100%;
+    border-bottom: 0px solid gray;
+    
+    
+}
+header img {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    z-index: 0;
+}
+
+/*Sets up the burger/sticky nav that will appear on landing page for smaller viewports and on all article pages regardless of viewport.*/
+/*Main navigation will not be displayed for small viewports.*/
+.main_nav {
+    display: none;
+}
+
+.burger_nav {
+    width: 100%;
+    margin: 0;
+}
+#sticky_nav {
+    box-sizing: border-box;
+    background-color: white;
+    opacity: 1;
+    z-index: 973499;
+    position: static;
+    width: 100%;
+    height: 35px;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    border-top: 2px solid whitesmoke;
+    margin-bottom: 1px;
+}
+.burger_button {
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    border: 0px;
+    margin: 0px;
+    background: url(img/smallburger.png) no-repeat center;
+    background-color: white;
+    margin-left: 0px;
+    margin-top: 2px;
+    float: left;
+    vertical-align: middle;
+    
+}
+/*Burger button interaction on hover*/
+.burger_button:hover {
+    background-color: firebrick;
+}
+/*Sets up the drop down items of the sticky bar*/
+    .drop_down {
+        clear: both;
+        flex-direction: column;
+        width: 100%;
+        height: fit-content;
+        position: relative;
+        margin-left: 0px;
+        background-color: whitesmoke;
+        opacity: 1;
+        z-index: 5353564;
+        color: black;
+        display: none;
+    }
+    .drop_down li {
+        padding: 10px;
+        padding-left: 25px;
+        float: left;
+        width: 100%;
+        text-align: left;
+        border: none;
+    }
+    .drop_down li a {
+        font: bold normal  small-caps 0.75rem Roboto;
+        letter-spacing: 10px;
+        line-height: 20px;
+        color: brown;
+    }
+ /*Sets the exit button on the drop down, and hover interaction.*/   
+    #exit_button_burger_menu {
+        color: crimson;
+        position: absolute;
+        top: 2px;
+        right: 2px;
+        font-size: 20px;
+    }
+    
+    .drop_down li:hover {
+        box-shadow: none;
+    }
+/*Customizes the date displayed on top of the landing page. Date is generated in the JS.*/
+.date_bar {
+    display: block;
+    text-align: right;
+
+    box-sizing: border-box;
+    width: 100%;
+    height: fit-content;
+    overflow: visible;
+    padding: 0;
+    padding-bottom: 0;
+    margin: 0;
+    border: 0;
+    margin-top: 0px;
+    border-top: 2px solid whitesmoke;
+}
+#current_date  {
+     padding: 5px 10px;
+     border: 0px;
+     margin: 0px;
+     box-sizing: border-box;
+     
+    color: black;
+    font: 12px "Calibri";
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/*This class customizes the sticky nav title. It also works as a home button.*/
+.home_link {
+
+    width: 70%;
+    line-height: 30px;
+    padding-left: 10px;
+    margin: 2px 0 0;
+    float: left;
+    vertical-align: middle;
+    background-color: white;
+    opacity: 1;
+    word-spacing: 5px;
+    
+}
+.home_link a {
+
+    font-size: 0.9rem;
+    font-family:  Roboto, serif;
+    font-variant: small-caps;
+    font-weight: lighter;
+    line-height: 15px;
+    letter-spacing: 2px;
+    color: goldenrod;
+    text-shadow: 0.25px 0.25px gold;
+}
+
+/*The main tag of the landing page and all of subsequnt page - general box settings and the flex set up.
+ All items included in the main tag are displayes as a wrapped row. This file is written with a mobile first approach.
+ As such, all these settings - prior to the media queries - are specific to a small viewport. 
+ Larger viewports will be addressed in their respective media queries further down. */
+main {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+
+}
+/*Eponimous function - sets the single article rows, in this case the about article at the bottom of the landing page*/
+.one_col_container {
+   
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    height: fit-content;
+    justify-content: center;
+}
+
+/*First two rows of the landing page and some of the Article pages content are based on this class. */
+.two_col_container{
+    height: fit-content;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: stretch;
+}
+/*This class is attributed to children of the two classes above - one column and 2 columns.
+ As such they contain the flex: 1 1 50%; instruction which allow them to flex equally inside their parents.*/
+.main_container {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0 0 auto;
+    border: 0;
+    max-width: 100%;
+    align-self: flex-start;
+    flex: 1 1 100%;
+    
+}
+/*Specially customized item inside the .main_container class.
+Article and his children are the core component of the website.
+It has a round border setting for the hover transition.  */
+article {
+     
+    box-sizing: border-box;
+    max-width: 100%;
+    background-color: white;
+    padding: 20px;
+    margin: 20px 0px;
+    border-radius: 15px;
+}
+article p {
+    font: normal 0.75rem Calibri, Optima, Arial, sans-serif;
+    letter-spacing: 0.025rem;
+    line-height: 1.8rem;
+    hyphens: auto;
+}
+.article_pic {
+    padding: 0rem;
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+}
+/*The picture in the about section has different properties than the ones in the regular articles.*/
+.about_pic {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+/*This creates a different first letter for the paragraphs.*/
+article p::first-letter{
+    font-family: Georgia;
+    font-size: 3rem;
+    line-height: 2.25rem;
+    padding-top: 0px;
+    padding-right: 8px;
+    padding-left: 0px; 
+    
+}
+/*Hover interaction.*/
+article:hover
+{
+    box-shadow:
+            1px 1px brown,
+            2px 2px brown,
+            3px 3px brown;
+        
+    transform: translateX(-3px);
+}
+
+/*helps display columns of equal height*/
+.landing_page_min_height article{
+    min-height: 150px;
+}
+.aside_min_height article {
+    min-height: 450px;
+}
+/*Identifies the small articles on the landing page and overwrites the first-letter class for a smaller version.*/
+.landing_page_min_height article p::first-letter, aside p::first-letter {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    padding: 0;
+}
+
+
+/*General headings settings*/
+
+h1, h2, h3 {
+    height: fit-content;
+    font: small-caps normal 1rem Roboto;
+    letter-spacing: 5px;
+    word-spacing: 1px;
+
+    padding: 20px 0px 10px;
+    font-weight: 500;
+    font-variant: normal;
+    text-transform: capitalize; 
+    letter-spacing: 1px;
+    font-size: 1rem;
+}
+/*The landing page h1 - the only one places in the header - is hidden as there is a banner in place. It must be added so that the document outline is preserved.*/
+header h1 {
+    display: none;
+}
+/*Class used for adding colour.*/
+.gold {
+    color: goldenrod;
+}
+/*This is the gray background catergory title. */
+.main_title {
+background-color: white;
+border: 0px;
+padding: 10px;
+margin: 0px;
+max-width: 100%;
+height: 25px;
+padding-left: 1.5rem;
+border-top: 1px solid whitesmoke;
+background-color: whitesmoke;
+font-weight: 800;
+text-shadow: 0.25px 0.25px gold;
+color: goldenrod;
+}
+/*Main title interaction on hover*/
+.main_title:hover {
+    box-shadow: 0 6px 4px -4px gray inset;
+}
+
+/*General ul settings - applies to all uls in the website*/
+
+ul { 
+    list-style-type: none; /* otherwise list appears bulletted */
+    margin: 0 0.5rem;
+    padding: 0;
+    border: 0;
+} 
+
+.main_nav li:hover{
+    box-shadow: 0 4px 6px -4px brown inset;
+
+}
+
+/*Anchor pseudo-classes */
+a:link {
+    text-decoration: none;
+    color: goldenrod;
+}
+a:visited {color: goldenrod;}
+a:hover {
+    
+    color: crimson;
+    font-weight: bold;
+        
+}
+a:active {color: red;}
+
+
+/*Footer settings*/
+footer {
+    clear: both;
+    box-sizing: border-box;
+    padding: 0px 7px 7px;
+    margin: 0;
+    border: 0;
+    text-align: right;
+    width: 100%;
+    max-width: 100%;
+}
+
+footer small  {
+    
+    padding: 5px;
+    padding-right: 30px;
+    color: red;
+    font:  bold small-caps 11px Roboto, Serif;
+    letter-spacing: 3px;
+
+}
+.social_media_icons {
+    padding: 10px 10px 30px;
+    margin-bottom: 10px;
+}
+.social_media_icons img {
+    
+    width: 25px;
+}
+/*Positions the last icon further from the border of parent elemnt.*/
+.social_media_icons img:last-child {
+    padding-right: 30px;
+}
+/*Positions middle icon lower*/
+.align_icon {
+    margin-top: 5px;
+    height: 25px;
+}
+
+
+/*Specific seetings for viewports larger than 321px. Most settings in the media queries will be overwriting the ones above.*/
+@media screen and   (min-width: 321px) 
+{   
+    article {
+        padding: 20px;
+        margin: 20px 20px;
+    }
+    article p {
+        font-size: 0.95rem;
+        hyphens: auto;
+    }
+    .home_link a {
+        letter-spacing: 1px;
+        font-size: 1rem;
+    }
+    h2 {
+        height: 1.5rem;
+        clear: both;
+    }
+
+    .drop_down li a {
+    font-size: 0.8rem;
+}
+.social_media_icons img {
+    width: 30px;
+}
+}
+/*Instructions for viewports larger than 481px.*/
+@media screen and (min-width: 481px)
+{
+article {
+    padding: 40px;
+    }
+.home_link a {
+    letter-spacing: 8px;
+    font-size: 0.9rem;
+    }
+#burger_button_container {
+    margin-left: -40px;
+}
+
+.burger_banner_nav {
+    height: 45px;
+    border-top: 1px solid gray;
+    padding-top: 4px;
+    padding-bottom: 2px;
+}
+.burger_button {
+    width: 30px;
+    height: 30px;
+    padding: 0px;
+    border: 0px;
+    margin: 0px;
+    
+    margin-left: 40px;
+    margin-top: 2px;
+    float: left;
+}
+    
+h2 {
+    clear: none;
+}
+}
+
+/*Most elements get a size boost for viewports larger than 600px*/
+@media screen and (min-width: 600px){
+
+    /*A small amount of color is added to the sides of the body.*/
+body {
+    width: 90%;
+    margin: 0 auto;
+}
+
+:root {
+    background-color: crimson;
+}
+
+ article {
+    border-radius: 2.5rem;
+}
+
+/*we start displaying the main flexed nav and stop displaying the burgere one */
+.burger_nav { 
+    display: none;
+}
+/*Specific instructions for the main nav */
+.main_nav {
+    
+    width: 100%;
+    opacity: 1;
+    z-index: 999999;
+    background-color: white;
+    display: block;
+
+}
+.main_nav ul {
+    padding: 0px;
+    margin: 0;
+    border: 0;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+.main_nav ul li{
+    margin: 0 0.15rem;
+    border: 0;
+    padding: 0.5rem;
+    width: 6rem;
+    border-top: 2px solid firebrick;
+}
+
+.main_nav ul li a {        
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font: 0.75rem bold  Roboto, serif;
+    color: crimson;
+    text-transform: uppercase;
+    letter-spacing: 2.25px;
+}
+::-webkit-scrollbar {  
+    width: 20px;  
+    }  
+article p {
+    font-size: 1rem;
+    }
+}
+/*Instructions for viewports larger than 769px.*/
+@media screen and (min-width: 769px){
+::-webkit-scrollbar {  
+    width: 30px;  
+}
+
+.home_link a {
+    font-size: 1.05rem;
+    margin-top: 9px;
+}  
+    
+ .main_nav li a {
+        
+        font-size: 1.5rem;
+         padding-top: 0.75rem;
+         line-height: 0.75rem;
+         letter-spacing: 0.25rem;
+     } 
+.main_nav ul li { 
+ 
+         margin: 0.25rem;
+         width: 6rem;
+     }
+    
+}
+/*Instructions for viewports larger than 1025px.*/
+@media screen and (min-width: 1025px)
+{
+::-webkit-scrollbar {  
+    width: 50px;  
+}
+/*The two children of the .two_col_container are now displayed side by side*/
+.two_col_container{
+    flex-wrap: nowrap;
+  
+}
+
+article p {
+    font-size: 1rem;
+    line-height: 1.5;
+    }
+}
+
+/*Instructions for viewports larger than 1200px.*/
+@media screen  and (min-width: 1200px) {
+
+.main_nav ul li a {
+ 
+ font-size: 1.30rem;
+} 
+.main_nav ul li { 
+    width: 8rem;
+  margin: 0px;
+}
+}
+/*Instructions for viewports larger than 1400px.*/
+@media screen  and (min-width: 1400px) {
+/*Decrease body size.*/
+body {
+    width: 75%;
+}
+}
+
+
